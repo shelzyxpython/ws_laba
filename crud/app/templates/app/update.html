@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <input name="name" value="{{ men.name }}">
+        <input name="surname" value="{{ men.surname }}">
+        <input name="age" value="{{ men.age }}" type="number">
+        <input name="gender" value="{{ men.gender }}" type="checkbox">
+
+        <button>send</button>
+    </form>
+</body>
+</html>
